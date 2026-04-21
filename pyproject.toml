@@ -1,0 +1,24 @@
+[project]
+name = "newsgraph"
+version = "0.1.0"
+description = "NewsGraph: Aggregation & Intelligence Platform"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "sqlalchemy>=2.0.29",
+    "asyncpg>=0.29.0",         # Async Postgres driver
+    "alembic>=1.13.1",         # Database migrations
+    "pydantic-settings>=2.2.1",
+    "redis>=5.0.3",
+    "elasticsearch[async]>=8.13.0",
+]
+
+# With this new standard block:
+[dependency-groups]
+dev = [
+    "pytest>=8.1.1",
+    "pytest-asyncio>=0.23.6",
+    "ruff>=0.3.5",
+]
