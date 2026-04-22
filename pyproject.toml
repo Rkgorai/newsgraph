@@ -13,6 +13,9 @@ dependencies = [
     "pydantic-settings>=2.2.1",
     "redis>=5.0.3",
     "elasticsearch[async]>=8.13.0",
+    "feedparser>=6.0.12",
+    "httpx>=0.28.1",
+    "tenacity>=9.1.4",
 ]
 
 # With this new standard block:

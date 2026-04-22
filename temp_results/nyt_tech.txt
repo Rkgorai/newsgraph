@@ -1,0 +1,118 @@
+--- Scraped Articles from NYT Tech ---
+Total Count: 23
+
+[1] Headline: SpaceX Strikes Deal With Cursor for $60 Billion
+    Link:      https://www.nytimes.com/2026/04/21/business/spacex-cursor-deal.html
+    Published: 2026-04-21 18:52:29+00:00
+    Content:   The potential acquisition comes as Elon Musk’s rocket and satellite maker, which has been emphasizing artificial intelligence, is preparing to go publ...
+------------------------------------------------------------
+[2] Headline: A Wish List for John Ternus, the Man Replacing Tim Cook as Apple’s CEO
+    Link:      https://www.nytimes.com/2026/04/21/technology/apple-cook-ternus-wish-list.html
+    Published: 2026-04-21 03:33:32+00:00
+    Content:   John Ternus, an Apple veteran who runs hardware engineering, will take over an extraordinarily profitable company in need of new ideas....
+------------------------------------------------------------
+[3] Headline: Tim Cook Was Very, Very Good at Making Money
+    Link:      https://www.nytimes.com/2026/04/21/business/how-apple-became-a-4-trillion-company-under-tim-cook.html
+    Published: 2026-04-21 10:13:25+00:00
+    Content:   If the Steve Jobs era was defined by technological innovation, the Tim Cook period was one of exceptional financial growth....
+------------------------------------------------------------
+[4] Headline: Even Without Internet Access, Prisoners Are Trying to Benefit From A.I.
+    Link:      https://www.nytimes.com/2026/04/21/business/ai-chatbots-prisoners.html
+    Published: 2026-04-21 08:49:03+00:00
+    Content:   Most prisons forbid online access. But inmates are finding ways to ask chatbots questions anyway....
+------------------------------------------------------------
+[5] Headline: Amazon Plans to Invest Up to $25 Billion in Anthropic
+    Link:      https://www.nytimes.com/2026/04/20/technology/amazon-anthropic-investment.html
+    Published: 2026-04-20 19:41:05+00:00
+    Content:   Anthropic also committed to spending $100 billion on Amazon technologies that can help build and deploy A.I. systems....
+------------------------------------------------------------
+[6] Headline: Apple C.E.O.s Through the Years: From Michael Scott (Not That One) to John Ternus
+    Link:      https://www.nytimes.com/2026/04/20/technology/apple-ceos-photos.html
+    Published: 2026-04-21 09:21:29+00:00
+    Content:   Apple’s corner office has been a seat from which executives like Steve Jobs changed how we interact with technology....
+------------------------------------------------------------
+[7] Headline: Tim Cook Will Step Down as Apple C.E.O.
+    Link:      https://www.nytimes.com/2026/04/20/technology/tim-cook-apple-ceo-steps-down.html
+    Published: 2026-04-21 10:46:06+00:00
+    Content:   The longtime leader of the iPhone maker will be replaced by John Ternus, the company’s head of hardware engineering....
+------------------------------------------------------------
+[8] Headline: Elon Musk Ignores French Prosecutors, Widening Tech Rift With Europe
+    Link:      https://www.nytimes.com/2026/04/20/world/europe/elon-musk-ignores-french-summons.html
+    Published: 2026-04-20 13:24:59+00:00
+    Content:   Prosecutors investigating his social media company, X, had summoned him for a meeting. His no-show reflected a broader dispute over regulation....
+------------------------------------------------------------
+[9] Headline: California Accuses Amazon of Price Fixing in Legal Filing
+    Link:      https://www.nytimes.com/2026/04/20/technology/amazon-antitrust-suit-california.html
+    Published: 2026-04-20 15:59:04+00:00
+    Content:   The state claimed the e-commerce giant pressured brands like Levi’s and Hanes to ask competing retailers to raise prices on certain products....
+------------------------------------------------------------
+[10] Headline: White House and Anthropic Hold ‘Productive’ Meeting, Aiming for a Compromise
+    Link:      https://www.nytimes.com/2026/04/17/technology/white-house-anthropic-artificial-intelligence.html
+    Published: 2026-04-17 18:15:46+00:00
+    Content:   Friday’s meeting at the White House followed the introduction of Anthropic’s powerful new artificial intelligence model, Mythos, which U.S. officials ...
+------------------------------------------------------------
+[11] Headline: Cerebras, an A.I. Chip Maker, Files to Go Public as Tech Offerings Ramp Up
+    Link:      https://www.nytimes.com/2026/04/17/technology/cerebras-public-offering-ai.html
+    Published: 2026-04-19 12:30:42+00:00
+    Content:   The Silicon Valley chip maker filed a prospectus just as SpaceX, Anthropic and OpenAI prepared for their own listings, in what is shaping up to be a w...
+------------------------------------------------------------
+[12] Headline: How Do You Measure an A.I. Boom?
+    Link:      https://www.nytimes.com/2026/04/17/technology/how-do-you-measure-an-ai-boom.html
+    Published: 2026-04-17 10:30:43+00:00
+    Content:   A chart created by METR, a nonprofit A.I. organization, has become an industrywide obsession as it measures the rapid development of big A.I. systems....
+------------------------------------------------------------
+[13] Headline: A.I. Backlash Turns Violent + Kara Swisher on Healthmaxxing + The Zuck Bot Is Coming
+    Link:      https://www.nytimes.com/2026/04/17/podcasts/hardfork-ai-backlash.html
+    Published: 2026-04-17 05:30:03+00:00
+    Content:   Is anti-A.I. radicalization a growing trend?...
+------------------------------------------------------------
+[14] Headline: Through A.I. Glasses-Powered Translation, Korea’s Theaters Hope for a K-Pop Moment
+    Link:      https://www.nytimes.com/2026/04/17/arts/korean-theater-ai-glasses-translation.html
+    Published: 2026-04-19 15:02:16+00:00
+    Content:   Producers and the cultural authorities hope that technology can overcome a language barrier and take the country’s shows to the world....
+------------------------------------------------------------
+[15] Headline: Pentagon Seeks Help From Ford and G.M.
+    Link:      https://www.nytimes.com/2026/04/16/business/pentagon-ford-general-motors-defense-production.html
+    Published: 2026-04-16 15:53:00+00:00
+    Content:   Concerned about the slow pace and high cost of weapons production, Pentagon officials have begun talks with General Motors and Ford Motor about produc...
+------------------------------------------------------------
+[16] Headline: Sneaker Company Allbirds Plans to Pivot to A.I. Yes, A.I.
+    Link:      https://www.nytimes.com/2026/04/15/us/allbirds-shoes-ai-pivot.html
+    Published: 2026-04-15 19:01:58+00:00
+    Content:   After selling its business for $39 million last month, the company said it planned to buy powerful computer chips and rebrand itself NewBird AI....
+------------------------------------------------------------
+[17] Headline: Ford Says Doug Field, Who Led Company's E.V. Push, is Leaving
+    Link:      https://www.nytimes.com/2026/04/15/business/ford-electric-vehicles-doug-field.html
+    Published: 2026-04-15 15:52:20+00:00
+    Content:   Doug Field, a former Tesla and Apple executive, had returned to Ford Motor in 2021 to help develop new electric models and software....
+------------------------------------------------------------
+[18] Headline: Ad Companies Settle With F.T.C. Over Claims of Harm to Conservative Sites
+    Link:      https://www.nytimes.com/2026/04/15/technology/ftc-ad-companies-settlement.html
+    Published: 2026-04-15 12:38:36+00:00
+    Content:   WPP, Dentsu and Publicis settled claims they colluded on policies to combat misinformation, denying ad revenue to publishers on the right....
+------------------------------------------------------------
+[19] Headline: What Is ‘Jagged Intelligence’ and How Can It Reframe the AI Debate?
+    Link:      https://www.nytimes.com/2026/04/15/technology/how-jagged-intelligence-can-reframe-the-ai-debate.html
+    Published: 2026-04-16 12:06:09+00:00
+    Content:   A.I. has always been compared to human intelligence, but that may not be the right way to think about it. What it does well can help predict what jobs...
+------------------------------------------------------------
+[20] Headline: Spice Up Your Cooking Skills With Help From Your Phone
+    Link:      https://www.nytimes.com/2026/04/15/technology/personaltech/recipes-cooking-ai.html
+    Published: 2026-04-15 03:34:06+00:00
+    Content:   Recipe apps and artificial intelligence can give you a boost, but free tools already on your device can also assist with meal planning and preparation...
+------------------------------------------------------------
+[21] Headline: We Don’t Really Know How A.I. Works. That’s a Problem.
+    Link:      https://www.nytimes.com/2026/04/15/magazine/ai-black-box-interpretability-research.html
+    Published: 2026-04-15 09:57:27+00:00
+    Content:   For us to trust it on certain subjects, researchers in the growing field of interpretability might need to learn how to open the black box of its brai...
+------------------------------------------------------------
+[22] Headline: They Were YouTube’s First Stars. Here’s What They Wish They’d Known.
+    Link:      https://www.nytimes.com/2026/04/15/arts/television/early-youtube-stars-success-learnings.html
+    Published: 2026-04-16 09:00:51+00:00
+    Content:   MatPat, Miranda Sings, Grace Helbig and WheezyWaiter hit it big on YouTube long before it became a behemoth. They have thoughts about what it takes to...
+------------------------------------------------------------
+[23] Headline: How Older Adults Are Using VR to Counter Social Isolation
+    Link:      https://www.nytimes.com/2026/04/15/technology/vr-technology-elderly-community-social-isolation.html
+    Published: 2026-04-15 03:30:11+00:00
+    Content:   New tools tailored for use in senior living communities allow for shared experiences and social bonding....
+------------------------------------------------------------
