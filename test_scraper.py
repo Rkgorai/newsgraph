@@ -1,38 +1,23 @@
 import asyncio
-import os
-import re
 from app.connectors.rss import RSSConnector
+from app.services.ingestion_service import save_articles_to_db
 
-def sanitize_filename(name: str) -> str:
-    """Converts a source name like 'The Hindu' to a clean filename 'the_hindu.txt'"""
-    # Lowercase and replace spaces/symbols with underscores
-    clean_name = re.sub(r'[^a-z0-9]+', '_', name.lower()).strip('_')
-    return f"{clean_name}.txt"
+# Fixed the typo here:
+from app.core.database import AsyncSessionLocal 
 
 async def fetch_and_save(source_name: str, feed_url: str):
-    """Fetches a single feed and saves it to its own text file."""
+    """Fetches a feed and saves it directly to PostgreSQL."""
     connector = RSSConnector(source_name=source_name, feed_url=feed_url)
     
-    # Generate the file path
-    filename = sanitize_filename(source_name)
-    output_path = os.path.join("temp_results", filename)
-
     try:
+        # 1. Fetch from the internet
         articles = await connector.fetch_and_normalize()
         
-        # Write the results to this specific source's file
-        with open(output_path, "w", encoding="utf-8") as f:
-            f.write(f"--- Scraped Articles from {source_name} ---\n")
-            f.write(f"Total Count: {len(articles)}\n\n")
+        # 2. Save to the database (Fixed typo here too)
+        async with AsyncSessionLocal() as db:
+            saved_count = await save_articles_to_db(db, source_name, feed_url, articles)
             
-            for index, article in enumerate(articles, start=1):
-                f.write(f"[{index}] Headline: {article.title}\n")
-                f.write(f"    Link:      {article.url}\n")
-                f.write(f"    Published: {article.published_at}\n")
-                f.write(f"    Content:   {str(article.content)[:150]}...\n")
-                f.write("-" * 60 + "\n")
-                
-        print(f"✅ [{source_name}] Saved {len(articles)} articles to {output_path}")
+        print(f"✅ [{source_name}] Fetched {len(articles)} -> Saved {saved_count} NEW articles to DB!")
         
     except Exception as e:
         print(f"❌ [{source_name}] Failed: {e}")
@@ -40,12 +25,8 @@ async def fetch_and_save(source_name: str, feed_url: str):
         await connector.close()
 
 async def main():
-    print("Initializing NewsGraph Concurrent Scraper...\n")
+    print("Initializing Database Ingestion Scraper...\n")
     
-    # Ensure the directory exists
-    os.makedirs("temp_results", exist_ok=True)
-    
-    # Target Indian News Sources
     news_sources = [
         # Indian News Sources
         {"name": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss"},
@@ -64,7 +45,7 @@ async def main():
     tasks = [fetch_and_save(s["name"], s["url"]) for s in news_sources]
     await asyncio.gather(*tasks)
     
-    print("\n📁 All downloads complete! Check the 'temp_results' folder to see your files.")
+    print("\n🐘 Database insertion complete!")
 
 if __name__ == "__main__":
     asyncio.run(main())
