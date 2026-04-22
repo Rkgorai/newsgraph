@@ -1,16 +1,38 @@
-from pydantic import BaseModel, HttpUrl
+from pydantic import BaseModel, HttpUrl, Field
+from uuid import UUID
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List
 
+# --- SCRAPER MODELS (Phase 2) ---
 class RawArticle(BaseModel):
-    """The standard format for all incoming news articles, regardless of source."""
+    """Schema for the initial fetch from RSS feeds"""
     title: str
-    content: Optional[str] = None
-    url: HttpUrl
-    source_name: str
-    published_at: datetime
+    content: str
+    url: str
     author: Optional[str] = None
-    
-    # We will generate these hashes later in the deduplication engine
-    url_hash: Optional[str] = None 
-    content_hash: Optional[str] = None
+    published_at: datetime
+    image_url: Optional[str] = None
+
+# --- API RESPONSE MODELS (Phase 3) ---
+class SourceRead(BaseModel):
+    id: UUID
+    name: str
+
+    class Config:
+        from_attributes = True
+
+class ArticleRead(BaseModel):
+    id: UUID
+    title: str
+    content: Optional[str] = ""  # <--- Add this line
+    url: str
+    author: Optional[str] = None
+    published_at: datetime
+    source: SourceRead
+
+    class Config:
+        from_attributes = True
+
+class FeedResponse(BaseModel):
+    total: int
+    articles: List[ArticleRead]

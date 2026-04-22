@@ -5,7 +5,7 @@ description = "NewsGraph: Aggregation & Intelligence Platform"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi>=0.110.0",
+    "fastapi[standard]>=0.110.0",
     "uvicorn[standard]>=0.29.0",
     "sqlalchemy>=2.0.29",
     "asyncpg>=0.29.0",         # Async Postgres driver
@@ -17,6 +17,7 @@ dependencies = [
     "httpx>=0.28.1",
     "tenacity>=9.1.4",
     "celery>=5.6.3",
+    "trafilatura>=2.0.0",
 ]
 
 # With this new standard block:

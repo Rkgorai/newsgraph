@@ -1,10 +1,22 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from typing import List
+import trafilatura  # <--- New Import
 
 from app.models.source import NewsSource
 from app.models.article import Article
 from app.schemas.article import RawArticle
+
+def extract_full_text(url: str) -> str:
+    """Visits the URL and extracts the main article body."""
+    try:
+        downloaded = trafilatura.fetch_url(url)
+        if downloaded:
+            # extract() returns clean text, or None if it fails
+            return trafilatura.extract(downloaded) or ""
+    except Exception as e:
+        print(f"⚠️ Failed to deep scrape {url}: {e}")
+    return ""
 
 async def save_articles_to_db(
     db: AsyncSession, 
@@ -12,8 +24,6 @@ async def save_articles_to_db(
     feed_url: str, 
     raw_articles: List[RawArticle]
 ) -> int:
-    """Saves articles to the database and skips duplicates."""
-    
     # 1. Get or Create the NewsSource
     result = await db.execute(select(NewsSource).where(NewsSource.name == source_name))
     source = result.scalars().first()
@@ -24,7 +34,7 @@ async def save_articles_to_db(
         await db.commit()
         await db.refresh(source)
         
-    # 2. Filter out articles we already have (URL Deduplication)
+    # 2. Filter out articles we already have
     urls = [str(article.url) for article in raw_articles]
     if not urls:
         return 0
@@ -36,10 +46,20 @@ async def save_articles_to_db(
     new_articles = []
     for raw in raw_articles:
         if str(raw.url) not in existing_urls:
+            
+            # --- THE CHANGE STARTS HERE ---
+            final_content = raw.content
+            
+            # If RSS content is missing, go get the full text
+            if not final_content or len(final_content) < 50:
+                print(f"🔍 Deep scraping for: {raw.title}")
+                final_content = extract_full_text(str(raw.url))
+            # --- THE CHANGE ENDS HERE ---
+
             new_article = Article(
                 source_id=source.id,
                 title=raw.title,
-                content=raw.content,
+                content=final_content, # Now potentially full-text!
                 url=str(raw.url),
                 author=raw.author,
                 published_at=raw.published_at,
@@ -51,5 +71,4 @@ async def save_articles_to_db(
         db.add_all(new_articles)
         await db.commit()
         
-    # Return how many *new* articles were successfully saved
     return len(new_articles)
