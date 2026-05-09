@@ -1,0 +1,82 @@
+[
+  {
+    "name": "The Hindu",
+    "url": "https://www.thehindu.com/news/national/feeder/default.rss"
+  },
+  {
+    "name": "Times of India",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms"
+  },
+  {
+    "name": "NDTV",
+    "url": "https://feeds.feedburner.com/ndtvnews-top-stories"
+  },
+  {
+    "name": "The Indian Express",
+    "url": "https://indianexpress.com/feed/"
+  },
+  {
+    "name": "Hindustan Times",
+    "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
+  },
+  {
+    "name": "Economic Times",
+    "url": "https://economictimes.indiatimes.com/rssfeedsdefault.cms"
+  },
+  {
+    "name": "LiveMint",
+    "url": "https://www.livemint.com/rss/news"
+  },
+  {
+    "name": "Business Standard",
+    "url": "https://www.business-standard.com/rss/latest-news-1.rss"
+  },
+  {
+    "name": "The Verge",
+    "url": "https://www.theverge.com/rss/index.xml"
+  },
+  {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/feed/"
+  },
+  {
+    "name": "NYT Tech",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+  },
+  {
+    "name": "Wired",
+    "url": "https://www.wired.com/feed/rss"
+  },
+  {
+    "name": "Ars Technica",
+    "url": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  {
+    "name": "MIT Tech Review",
+    "url": "https://www.technologyreview.com/feed/"
+  },
+  {
+    "name": "Engadget",
+    "url": "https://www.engadget.com/rss.xml"
+  },
+  {
+    "name": "OpenAI Blog",
+    "url": "https://openai.com/news/rss.xml"
+  },
+  {
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/blog/feed.xml"
+  },
+  {
+    "name": "BBC World News",
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+  },
+  {
+    "name": "Reuters",
+    "url": "https://www.reutersagency.com/feed/"
+  },
+  {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/world/rss"
+  }
+]
