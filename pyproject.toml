@@ -18,6 +18,10 @@ dependencies = [
     "tenacity>=9.1.4",
     "celery>=5.6.3",
     "trafilatura>=2.0.0",
+    # Market Intelligence Layer
+    "yfinance>=0.2.40",
+    "rapidfuzz>=3.9.0",
+    "scipy>=1.13.0",
 ]
 
 # With this new standard block:
